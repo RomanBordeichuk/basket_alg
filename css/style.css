@@ -1,0 +1,229 @@
+/* reset css */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* other */
+body {
+    background: #f8f8f8;
+    font-family: Arial, sans-serif;
+}
+
+/* header */
+.header {
+    background: #555;
+    color: #fff;
+    height: 60px;
+    padding: 5px 0;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.basket {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+}
+
+.basket-icon {
+    display: block;
+    background: orange;
+    background-size: cover;
+    background-position: 50% 50%;
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+}
+
+/* columns */
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main {
+    margin-top: 80px;
+}
+
+.column {
+    min-height: 95vh;
+    background: #fff;
+    box-shadow: 0 0 2px 0 rgb(51 51 51 / 5%), 0 1px 4px 0 rgb(51 51 51 / 15%);
+}
+
+.left {
+    width: 69%;
+}
+
+.right {
+    width: 30%;
+    padding: 20px;
+}
+
+.right span {
+    display: block;
+    margin-left: 20px;
+}
+
+.right span:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* items */
+.items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.item {
+    padding-bottom: 20px;
+    width: calc(100% / 3);
+    height: 370px;
+    margin-bottom: 5px;
+    line-height: 1.4;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+.item_basket {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.side_left{
+    display: flex;
+    align-items: center;
+}
+.side_right{
+    display: flex;
+    align-items: center;
+}
+.wrapper {
+    padding: 10px;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: 200px;
+    margin: 0 auto;
+    object-position: 50% 50%;
+    object-fit: scale-down;
+    background: #fff;
+}
+
+.title {
+    color: #1752af;
+    font-size: 18px;
+}
+
+.description {
+    font-size: 16px;
+}
+
+.bottom {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffa726;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.buy {
+    width: 110px;
+    text-align: center;
+    display: inline-block;
+    background: #ffa726;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 3px;
+    padding: 5px 0;
+    cursor: pointer;
+}
+
+.buy:active {
+    filter: brightness(1.3);
+}
+
+.basket_cont {
+    display: none;
+    width: 100%;
+}
+.basket_cont .head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding: 40px;
+}
+.basket_cont .head .info > *{
+    padding-left: 100px;
+}
+.item_cont{
+    display: flex;
+}
+.item_cont img{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+.count{
+    display: flex;
+    align-items: center;
+    margin-right: 35px;
+}
+.arrow{
+    font-size: 20px;
+    font-weight: bold;
+    color: grey;
+}
+.num{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid grey;
+    border-radius: 5px;
+    width: 3em;
+    height: 2em;
+    margin: 10px;
+    padding-left: 5px;
+}
+.main_cost{
+    display: block;
+    text-align: right;
+    margin-right: 35px;
+    width: 100px;
+}
+.total_cost{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100px;
+    padding: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    color: grey;
+}
+.total_cost span{
+    display: block;
+    width: 130px;
+    text-align: right;
+}
+.total_cost h3{
+    color: white;
+    font-weight: normal;
+    padding: 10px;
+    border-radius: 5px;
+    background: #ffa726;
+}

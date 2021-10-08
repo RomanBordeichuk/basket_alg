@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+
+            </div>
+            <div class="basket" onclick="fbin()">
+                <span class="basket-icon"></span>
+                <p class="text">Кошик</p>
+            </div>
+        </div>
+    </header>
+
+    <div class="container main">
+        <div class="column left items">
+            <div class="basket_cont">
+                <div class="head">
+                    <h2>Корзина</h2>
+                    <div class="info">
+                        <span>Кількість</span>
+                        <span>Ціна</span>
+                    </div>
+                </div>
+                <div class="main_basket">
+                   
+                </div>
+                <div class="total_cost">
+                    <h3 onclick="calc()">Повна вартість: </h3>
+                    <span></span>
+                </div>
+            </div>
+            <div class="item item-1">
+                <img class="image purple" src="https://hotline.ua/img/tx/157/157200494_s265.jpg">
+                <div class="wrapper">
+                    <h3 class="title">Canon PowerShot A1100 Pink</h3>
+                    <div class="description">
+                        <p class="type compact">Тип: Компактний фотоапарат</p>
+                        <p class="color pink">Колір: рожевий</p>
+                        <p class="date date2017">Дата випуску: 10.2017</p>
+                        <div class="bottom">
+                            <span class="price">1962 грн.</span>
+                            <span class="buy" onclick="buyItem(1)">КУПИТИ</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item item-2">
+                <img class="image green" src="img/green.jpeg">
+                <div class="wrapper">
+                    <h3 class="title">Canon PowerShot A1100 Pink</h3>
+                    <div class="description">
+                        <p class="type compact">Тип: Компактний фотоапарат</p>
+                        <p class="color pink">Колір: рожевий</p>
+                        <p class="date date2017">Дата випуску: 10.2018</p>
+                        <div class="bottom">
+                            <span class="price">2462 грн.</span>
+                            <span class="buy" onclick="buyItem(2)">КУПИТИ</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item item-3">
+                <img class="image green" src="img/green.jpeg">
+                <div class="wrapper">
+                    <h3 class="title">Canon PowerShot A1100 Pink</h3>
+                    <div class="description">
+                        <p class="type compact">Тип: Компактний фотоапарат</p>
+                        <p class="color pink">Колір: рожевий</p>
+                        <p class="date date2017">Дата випуску: 10.2017</p>
+                        <div class="bottom">
+                            <span class="price">2962 грн.</span>
+                            <span class="buy" onclick="buyItem(3)">КУПИТИ</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item item-4">
+                <img class="image green" src="img/green.jpeg">
+                <div class="wrapper">
+                    <h3 class="title">Canon PowerShot A1100 Pink</h3>
+                    <div class="description">
+                        <p class="type compact">Тип: Компактний фотоапарат</p>
+                        <p class="color pink">Колір: рожевий</p>
+                        <p class="date date2017">Дата випуску: 10.2019</p>
+                        <div class="bottom">
+                            <span class="price">1962 грн.</span>
+                            <span class="buy" onclick="buyItem(4)">КУПИТИ</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item item-5">
+                <img class="image blue" src="img/blue.jpg">
+                <div class="wrapper">
+                    <h3 class="title">Canon PowerShot A1100 Pink</h3>
+                    <div class="description">
+                        <p class="type compact">Тип: Компактний фотоапарат</p>
+                        <p class="color pink">Колір: рожевий</p>
+                        <p class="date date2017">Дата випуску: 10.2019</p>
+                        <div class="bottom">
+                            <span class="price">2462 грн.</span>
+                            <span class="buy" onclick="buyItem(5)">КУПИТИ</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item item-6">
+                <img class="image purple" src="https://hotline.ua/img/tx/157/157200494_s265.jpg">
+                <div class="wrapper">
+                    <h3 class="title">Canon PowerShot A1100 Pink</h3>
+                    <div class="description">
+                        <p class="type compact">Тип: Компактний фотоапарат</p>
+                        <p class="color pink">Колір: рожевий</p>
+                        <p class="date date2017">Дата випуску: 10.2018</p>
+                        <div class="bottom">
+                            <span class="price">1962 грн.</span>
+                            <span class="buy" onclick="buyItem(6)">КУПИТИ</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item item-7">
+                <img class="image blue" src="img/blue.jpg">
+                <div class="wrapper">
+                    <h3 class="title">Canon PowerShot A1100 Pink</h3>
+                    <div class="description">
+                        <p class="type compact">Тип: Компактний фотоапарат</p>
+                        <p class="color pink">Колір: рожевий</p>
+                        <p class="date date2017">Дата випуску: 10.2019</p>
+                        <div class="bottom">
+                            <span class="price">2962 грн.</span>
+                            <span class="buy" onclick="buyItem(7)">КУПИТИ</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item item-8">
+                <img class="image green" src="img/green.jpeg">
+                <div class=" wrapper">
+                <h3 class="title">Canon PowerShot A1100 Pink</h3>
+                <div class="description">
+                    <p class="type compact">Тип: Компактний фотоапарат</p>
+                    <p class="color pink">Колір: рожевий</p>
+                    <p class="date date2017">Дата випуску: 10.2017</p>
+                    <div class="bottom">
+                        <span class="price">2462 грн.</span>
+                        <span class="buy" onclick="buyItem(8)">КУПИТИ</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item item-9">
+            <img class="image purple" src="https://hotline.ua/img/tx/157/157200494_s265.jpg">
+            <div class="wrapper">
+                <h3 class="title">Canon PowerShot A1100 Pink</h3>
+                <div class="description">
+                    <p class="type compact">Тип: Компактний фотоапарат</p>
+                    <p class="color pink">Колір: рожевий</p>
+                    <p class="date date2017">Дата випуску: 10.2018</p>
+                    <div class="bottom">
+                        <span class="price">2962 грн.</span>
+                        <span class="buy" onclick="buyItem(9)">КУПИТИ</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item item-10">
+            <img class="image green" src="img/green.jpeg">
+            <div class=" wrapper">
+            <h3 class="title">Canon PowerShot A1100 Pink</h3>
+            <div class="description">
+                <p class="type compact">Тип: Компактний фотоапарат</p>
+                <p class="color pink">Колір: рожевий</p>
+                <p class="date date2017">Дата випуску: 10.2019</p>
+                <div class="bottom">
+                    <span class="price">2462 грн.</span>
+                    <span class="buy" onclick="buyItem(10)">КУПИТИ</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="item item-11">
+        <img class="image green" src="img/green.jpeg">
+            <div class=" wrapper">
+        <h3 class="title">Canon PowerShot A1100 Pink</h3>
+        <div class="description">
+            <p class="type compact">Тип: Компактний фотоапарат</p>
+            <p class="color pink">Колір: рожевий</p>
+            <p class="date date2017">Дата випуску: 10.2017</p>
+            <div class="bottom">
+                <span class="price">2962 грн.</span>
+                <span class="buy" onclick="buyItem(11)">КУПИТИ</span>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="item item-12">
+        <img class="image purple" src="https://hotline.ua/img/tx/157/157200494_s265.jpg">
+        <div class="wrapper">
+            <h3 class="title">Canon PowerShot A1100 Pink</h3>
+            <div class="description">
+                <p class="type compact">Тип: Компактний фотоапарат</p>
+                <p class="color pink">Колір: рожевий</p>
+                <p class="date date2017">Дата випуску: 10.2019</p>
+                <div class="bottom">
+                    <span class="price">2962 грн.</span>
+                    <span class="buy" onclick="buyItem(12)">КУПИТИ</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="item item-13">
+        <img class="image blue" src="img/blue.jpg">
+        <div class="wrapper">
+            <h3 class="title">Canon PowerShot A1100 Pink</h3>
+            <div class="description">
+                <p class="type compact">Тип: Компактний фотоапарат</p>
+                <p class="color pink">Колір: рожевий</p>
+                <p class="date date2017">Дата випуску: 10.2019</p>
+                <div class="bottom">
+                    <span class="price">2462 грн.</span>
+                    <span class="buy" onclick="buyItem(13)">КУПИТИ</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="item item-14">
+        <img class="image purple" src="https://hotline.ua/img/tx/157/157200494_s265.jpg">
+        <div class="wrapper">
+            <h3 class="title">Canon PowerShot A1100 Pink</h3>
+            <div class="description">
+                <p class="type compact">Тип: Компактний фотоапарат</p>
+                <p class="color pink">Колір: рожевий</p>
+                <p class="date date2017">Дата випуску: 10.2018</p>
+                <div class="bottom">
+                    <span class="price">1962 грн.</span>
+                    <span class="buy" onclick="buyItem(14)">КУПИТИ</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="item item-15">
+        <img class="image green" src="img/green.jpeg">
+        <div class="wrapper">
+            <h3 class="title">Canon PowerShot A1100 Pink</h3>
+            <div class="description">
+                <p class="type compact">Тип: Компактний фотоапарат</p>
+                <p class="color pink">Колір: рожевий</p>
+                <p class="date date2017">Дата випуску: 10.2017</p>
+                <div class="bottom">
+                    <span class="price">2962 грн.</span>
+                    <span class="buy" onclick="buyItem(15)">КУПИТИ</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="item item-16">
+        <img class="image green" src="img/green.jpeg">
+        <div class="wrapper">
+            <h3 class="title">Canon PowerShot A1100 Pink</h3>
+            <div class="description">
+                <p class="type compact">Тип: Компактний фотоапарат</p>
+                <p class="color pink">Колір: рожевий</p>
+                <p class="date date2017">Дата випуску: 10.2019</p>
+                <div class="bottom">
+                    <span class="price">2462 грн.</span>
+                    <span class="buy" onclick="buyItem(16)">КУПИТИ</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="item item-17">
+        <img class="image purple" src="https://hotline.ua/img/tx/157/157200494_s265.jpg">
+        <div class="wrapper">
+            <h3 class="title">Canon PowerShot A1100 Pink</h3>
+            <div class="description">
+                <p class="type compact">Тип: Компактний фотоапарат</p>
+                <p class="color pink">Колір: рожевий</p>
+                <p class="date date2017">Дата випуску: 10.2018</p>
+                <div class="bottom">
+                    <span class="price">1962 грн.</span>
+                    <span class="buy" onclick="buyItem(17)">КУПИТИ</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="item item-18">
+        <img class="image purple" src="https://hotline.ua/img/tx/157/157200494_s265.jpg">
+        <div class="wrapper">
+            <h3 class="title">Canon PowerShot A1100 Pink</h3>
+            <div class="description">
+                <p class="type compact">Тип: Компактний фотоапарат</p>
+                <p class="color pink">Колір: рожевий</p>
+                <p class="date date2017">Дата випуску: 10.2017</p>
+                <div class="bottom">
+                    <span class="price">2962 грн.</span>
+                    <span class="buy" onclick="buyItem(18)">КУПИТИ</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="item item-19">
+        <img class="image purple" src="https://hotline.ua/img/tx/157/157200494_s265.jpg">
+        <div class="wrapper">
+            <h3 class="title">Canon PowerShot A1100 Pink</h3>
+            <div class="description">
+                <p class="type compact">Тип: Компактний фотоапарат</p>
+                <p class="color pink">Колір: рожевий</p>
+                <p class="date date2017">Дата випуску: 10.2019</p>
+                <div class="bottom">
+                    <span class="price">2962 грн.</span>
+                    <span class="buy" onclick="buyItem(19)">КУПИТИ</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="item item-20">
+        <img class="image purple" src="https://hotline.ua/img/tx/157/157200494_s265.jpg">
+        <div class="wrapper">
+            <h3 class="title">Canon PowerShot A1100 Pink</h3>
+            <div class="description">
+                <p class="type compact">Тип: Компактний фотоапарат</p>
+                <p class="color pink">Колір: рожевий</p>
+                <p class="date date2017">Дата випуску: 10.2018</p>
+                <div class="bottom">
+                    <span class="price">1962 грн.</span>
+                    <span class="buy" onclick="buyItem(20)">КУПИТИ</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="column right filters">
+        <div class="filters">
+            <h3>filters</h3>
+            <div class="all">
+                <span class="all" onclick="fall()">all</span>
+            </div>
+            <div class="color">
+                <h4>color:</h4>
+                <span class="purple" onclick="fpurple()">purple</span>
+                <span class="green" onclick="fgreen()">green</span>
+                <span class="blue" onclick="fblue()">blue</span>
+            </div>
+            <div class="prize">
+                <h4>price:</h4>
+                <span class="n20" onclick="fn20()">близько 2000 грн</span>
+                <span class="n25" onclick="fn25()">близько 2500 грн</span>
+                <span class="n30" onclick="fn30()">близько 3000 грн</span>
+            </div>
+            <div class="date">
+                <h4>date:</h4>
+                <span class="y17" onclick="fy17()">2017 year</span>
+                <span class="y18" onclick="fy18()">2018 year</span>
+                <span class="y19" onclick="fy19()">2019 year</span>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
